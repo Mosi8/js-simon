@@ -1,0 +1,11 @@
+#prova {
+    display: block;
+}
+
+.nascosto {
+   display: none; 
+}
+
+.mostra {
+    display: block;
+}
