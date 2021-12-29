@@ -31,7 +31,7 @@ let element = document.getElementById('prova');
 element.innerHTML = 'Memorizza questi numeri: ' + serieNum;
 
 // dopo 30 secondi nasconderli 
-const nascondereNumeri = setTimeout(nascondi, 3000);
+const nascondereNumeri = setTimeout(nascondi, 30000);
 // tasto per inserire i numeri 
 
 // controllare le due array dei numeri 
