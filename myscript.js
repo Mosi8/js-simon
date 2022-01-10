@@ -8,8 +8,8 @@ let testo = document.getElementById('testo');
 
 function nascondi() {
     element.innerHTML = ''
-    bottone.className = 'active';
-    testo.className = 'active';
+    bottone.className = 'mostra';
+    testo.className = 'mostra';
 }
 
 
@@ -20,8 +20,9 @@ const numeri = 5;
 
 while (serieNum.length < numeri) {
     let numero = genNum(); 
-    if (!serieNum.includes(numero))
+    if (!serieNum.includes(numero)){
     serieNum.push(numero);
+    }
 }
 console.log(serieNum);
 
@@ -40,16 +41,12 @@ const wrongNumbers = [];
 
 bottone.addEventListener('click',function() {
     for (let i = 1; i <= serieNum.length; i++) {
-        let numGuess;
-        do {
-            numGuess = parseInt(prompt('Inserisci un numero per volta'));
-        } while (numeriCorretti.includes(numGuess) || wrongNumbers.includes(numGuess));
+        let numGuess = parseInt(prompt('Inserisci un numero per volta'));
         if (serieNum.includes(numGuess)) {
             numeriCorretti.push(numGuess);
-        }else {
-            wrongNumbers.push(numGuess);
-        }     
+        }    
     }
+
     document.writeln('Hai indovinato ' + numeriCorretti.length + ' numeri. ');
     document.writeln('I numeri indovinati sono: ' + numeriCorretti);
 
