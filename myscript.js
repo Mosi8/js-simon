@@ -7,7 +7,7 @@ let bottone = document.getElementById('bottone');
 let testo = document.getElementById('testo');
 
 function nascondi() {
-    element.innerHTML = ''
+    element.innerHTML = '';
     bottone.className = 'mostra';
     testo.className = 'mostra';
 }
